@@ -1,14 +1,15 @@
 public class Main{
     public static void main(String[] args) {
-        int firstMult=1;
-        while(firstMult<11){
+        int firstMult = 1;
+        do {
             int secondMult=1;
-            while(secondMult<11){
-                int result=firstMult*secondMult;
-                System.out.println(firstMult+"*"+secondMult+"="+result);
+            do{
+               int result=firstMult*secondMult;
+                System.out.print(firstMult+"*"+secondMult+"="+result+"  ");
                 secondMult++;
-            }
+            }while(secondMult<11);
             firstMult++;
-        }
+            System.out.println();
+        } while (firstMult < 11);
     }
 }
